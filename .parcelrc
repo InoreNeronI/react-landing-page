@@ -3,5 +3,8 @@
   "reporters": ["...", "parcel-reporter-clean-dist"],
   "transformers": {
       "*.mp4": ["@parcel/transformer-raw"]
-    }
+    },
+  "validators": {
+    "*.{js,mjs,jsm,jsx,es6,cjs,ts,tsx}": ["@parcel/validator-eslint"]
+  }
 }
