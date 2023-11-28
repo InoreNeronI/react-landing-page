@@ -1,12 +1,12 @@
 import { bg1, champGaren, champAhri, champAshe } from '../../assets/images';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Autoplay from '../../../node_modules/swiper/modules/autoplay.mjs';
-import EffectFade from '../../../node_modules/swiper/modules/effect-fade.mjs';
+import { Swiper, SwiperSlide } from 'swiper/swiper-react';
+import Autoplay from 'swiper/modules/autoplay.mjs';
+import EffectFade from 'swiper/modules/effect-fade.mjs';
 
 import './welcome.scss';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import 'swiper/css/effect-fade';
+import 'swiper/swiper.scss';
+import 'swiper/modules/autoplay.scss';
+import 'swiper/modules/effect-fade.scss';
 
 const champImgs = [champAhri, champAshe, champGaren];
 const Welcome = ({ isActive }) => {

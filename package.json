@@ -4,9 +4,8 @@
   "homepage": "https://github.com/InoreNeronI/react-landing-page",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "start": "parcel serve index.html --open",
+    "build": "parcel build index.html --public-url /react-landing-page",
     "lint": "eslint --fix . && prettier . --write"
   },
   "repository": {
@@ -26,18 +25,20 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
     "@types/react": "^18.2.39",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
-    "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "parcel": "^2.10.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
     "prettier": "^3.1.0",
-    "vite": "^5.0.2"
+    "process": "^0.11.10"
   }
 }

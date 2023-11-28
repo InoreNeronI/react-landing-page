@@ -1,5 +1,5 @@
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/swiper.scss';
+import 'swiper/modules/pagination.scss';
 import './App.scss';
 
 import Header from './components/header/Header';

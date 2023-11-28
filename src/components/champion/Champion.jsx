@@ -1,7 +1,7 @@
 import ChampionCard from './ChampionCard';
 import './champion.scss';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/swiper-react';
 
 import { bg2 } from '../../assets/images';
 import { championsData } from '../../assets/dummy';

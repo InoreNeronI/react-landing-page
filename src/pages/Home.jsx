@@ -1,8 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/swiper-react';
 
 import SwiperCore from 'swiper';
-import Mousewheel from '../../node_modules/swiper/modules/mousewheel.mjs';
-import Pagination from '../../node_modules/swiper/modules/pagination.mjs';
+import Mousewheel from 'swiper/modules/mousewheel.mjs';
+import Pagination from 'swiper/modules/pagination.mjs';
 
 import { Welcome, Champion, ChampionDetail, Trailer, Credit } from '../components';
 
