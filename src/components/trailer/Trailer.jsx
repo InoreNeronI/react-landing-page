@@ -1,5 +1,6 @@
 import { trailerImg, bg3 } from '../../assets/images';
 import './trailer.scss';
+
 const Trailer = ({ isActive }) => {
   return (
     <div className={`trailer section ${isActive ? 'active' : ''}`}>
@@ -12,7 +13,7 @@ const Trailer = ({ isActive }) => {
           <span>Compete With</span>
           <h2 className="main-color">Friends</h2>
         </div>
-        <iframe src="https://www.youtube.com/embed/TFzkbos0oeo" frameBorder="0"></iframe>
+        <iframe title="trailer" src="https://www.youtube.com/embed/TFzkbos0oeo" frameBorder="0"></iframe>
       </div>
     </div>
   );

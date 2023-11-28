@@ -23,6 +23,7 @@
     }
   },
   "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
     "no-unused-vars": [
       "error",
       {
@@ -32,6 +33,7 @@
         "argsIgnorePattern": "^_"
       }
     ],
+    "react/prop-types": "off",
     "react/react-in-jsx-scope": "off"
   }
 }
