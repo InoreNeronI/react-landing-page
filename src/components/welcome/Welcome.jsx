@@ -1,6 +1,7 @@
 import { bg1, champGaren, champAhri, champAshe } from '../../assets/images';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectFade, Autoplay } from 'swiper';
+import Autoplay from '../../../node_modules/swiper/modules/autoplay.mjs';
+import EffectFade from '../../../node_modules/swiper/modules/effect-fade.mjs';
 
 import './welcome.scss';
 import 'swiper/css';
