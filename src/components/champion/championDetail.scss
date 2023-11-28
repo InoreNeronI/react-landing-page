@@ -1,5 +1,5 @@
-@use "../../App.scss" as *;
-@use "../../mixin.scss" as *;
+@use '../../App.scss' as *;
+@use '../../mixin.scss' as *;
 
 .champion-detail {
   position: absolute;
@@ -10,10 +10,12 @@
   z-index: 102;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
   background-color: black;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;

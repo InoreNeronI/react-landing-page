@@ -1,9 +1,9 @@
-import 'swiper/css'
-import 'swiper/css/pagination'
-import './App.scss'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import './App.scss';
 
-import Header from './components/header/Header'
-import Home from './pages/Home'
+import Header from './components/header/Header';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

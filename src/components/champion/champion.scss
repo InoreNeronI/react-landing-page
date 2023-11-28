@@ -1,5 +1,5 @@
-@use "sass:math";
-@use "../../mixin.scss" as *;
+@use 'sass:math';
+@use '../../mixin.scss' as *;
 .championContainer {
   .bg2 {
     position: absolute;
@@ -21,7 +21,9 @@
     overflow: visible;
     transform: translateX(200px);
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
     transition-delay: 0s;
 
     &.active {

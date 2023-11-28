@@ -1,15 +1,14 @@
-import ChampionCard from "./ChampionCard";
-import "./champion.scss";
+import ChampionCard from './ChampionCard';
+import './champion.scss';
 
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { bg2 } from '../../assets/images'
-import { championsData } from "../../assets/dummy"
+import { bg2 } from '../../assets/images';
+import { championsData } from '../../assets/dummy';
 
 const Champion = ({ isActive }) => {
-
   return (
-    <section className={`championContainer section ${isActive ? "active" : ""}`} >
+    <section className={`championContainer section ${isActive ? 'active' : ''}`}>
       <div style={{ background: `url(${bg2}) no-repeat center center/cover` }} className="bg2"></div>
       <Swiper
         slidesPerView={'auto'}
@@ -29,16 +28,14 @@ const Champion = ({ isActive }) => {
           },
         }}
       >
-        {
-          championsData.map((item, index) => (
-            <SwiperSlide key={index} className={`SwiperSlide ${isActive ? "active" : ""}`}>
-              <ChampionCard item={item} id={index} />
-            </SwiperSlide>
-          ))
-        }
+        {championsData.map((item, index) => (
+          <SwiperSlide key={index} className={`SwiperSlide ${isActive ? 'active' : ''}`}>
+            <ChampionCard item={item} id={index} />
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </section >
-  )
-}
+    </section>
+  );
+};
 
-export default Champion
+export default Champion;

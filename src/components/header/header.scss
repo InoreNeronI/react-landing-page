@@ -1,5 +1,5 @@
-@use "../../App.scss" as *;
-@use "../../mixin.scss" as *;
+@use '../../App.scss' as *;
+@use '../../mixin.scss' as *;
 .header {
   width: 100vw;
   height: 7rem;
@@ -62,7 +62,7 @@
 
       &::before,
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         height: 2px;
         width: 0;

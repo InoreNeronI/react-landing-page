@@ -1,11 +1,11 @@
 import './credit.scss';
 
-import { bgVideo } from "../../assets/videos"
+import { bgVideo } from '../../assets/videos';
 
 const Credit = ({ isActive }) => {
   return (
-    <section className={`section credit ${isActive ? "active" : ""}`}>
-      <video src={bgVideo} autoPlay loop muted className='overlay' />
+    <section className={`section credit ${isActive ? 'active' : ''}`}>
+      <video src={bgVideo} autoPlay loop muted className="overlay" />
       <div className="credit__content">
         <div className="title">
           <span>Start Your</span>
@@ -17,7 +17,7 @@ const Credit = ({ isActive }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Credit
+export default Credit;
