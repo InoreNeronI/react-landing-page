@@ -17,7 +17,7 @@ const Welcome = ({ isActive }) => {
         <div className="info">
           <div className="title">
             <span>Welcome To</span>
-            <h2 className="main-color">Summoner's Rift</h2>
+            <h2 className="main-color">Summoner&apos;s Rift</h2>
           </div>
           <div className="description">
             Team up with friends and test your skills in 5v5 MOBA combat. All the high-skill competition you crave,
