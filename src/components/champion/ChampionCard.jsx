@@ -31,7 +31,7 @@ const ChampionCard = ({ item, id }) => {
     document.querySelector(`#champ-detail-${id}`).classList.add('active');
   };
   return (
-    <div className="championCard" onClick={() => showDetails(item, id)}>
+    <div className="championCard" onClick={() => showDetails(item, id)} onKeyDown={() => showDetails(item, id)}>
       <div className="bg-image" style={{ background: `url(${item.bg}) no-repeat center center/cover ` }}></div>
       <img ref={cardRef} className="hoverimg" src={item.img} alt="img" />
       <h3 className="name">{item.name}</h3>
