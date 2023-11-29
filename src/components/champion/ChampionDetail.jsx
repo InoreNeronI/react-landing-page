@@ -36,7 +36,7 @@ const ChampionDetail = ({ item, id }) => {
           <iframe title="champion spotlight" ref={iframeRef} width="100%"></iframe>
         </div>
       </div>
-      <div className="champion-detail__close" onClick={onClose}>
+      <div className="champion-detail__close" onClick={onClose} role="presentation">
         <img src={closeIcon} alt="" />
       </div>
     </div>
