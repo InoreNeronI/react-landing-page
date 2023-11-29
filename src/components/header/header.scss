@@ -1,27 +1,27 @@
 @use '../../App.scss' as *;
 @use '../../mixin.scss' as *;
 .header {
-  width: 100vw;
-  height: 7rem;
-  padding: 0 2rem;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  padding: 0 2rem;
+  width: 100vw;
+  height: 7rem;
   pointer-events: none;
 
   &__inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
     @include tablet() {
       font-size: 0.9rem;
     }
     @include phone() {
-      height: 4rem;
       flex-direction: column;
       justify-content: space-between;
+      height: 4rem;
       font-size: 0.7rem;
     }
   }
@@ -46,8 +46,8 @@
 
   &__nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     li ~ li {
       margin-left: 1rem;
@@ -55,19 +55,19 @@
 
     a {
       display: inline-block;
-      padding: 0.5rem;
-      text-transform: uppercase;
       position: relative;
+      padding: 0.5rem;
       pointer-events: visible;
+      text-transform: uppercase;
 
       &::before,
       &::after {
-        content: '';
         position: absolute;
-        height: 2px;
-        width: 0;
-        background-color: $main-color;
         transition: width 0.3s ease;
+        background-color: $main-color;
+        width: 0;
+        height: 2px;
+        content: '';
       }
 
       &:hover::before,
@@ -76,8 +76,8 @@
       }
 
       &::before {
-        left: 0;
         top: 0;
+        left: 0;
       }
 
       &::after {

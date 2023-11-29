@@ -17,10 +17,10 @@
       }
     }
     .trailer__info {
-      height: 50% !important;
       padding-top: 6rem;
-      text-align: center;
       width: 100%;
+      height: 50% !important;
+      text-align: center;
       iframe {
         height: 14rem !important;
       }
@@ -53,18 +53,18 @@
   .trailer__info {
     iframe {
       margin-top: 2rem;
+      border: 2px solid snow;
       width: 30rem;
       height: 20rem;
-      border: 2px solid snow;
     }
   }
   .bg3 {
-    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0.2;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    opacity: 0.2;
   }
 }

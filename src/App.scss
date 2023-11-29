@@ -11,15 +11,15 @@ $black: #000;
 $font-family: SpookyGravePersonalUse, cursive;
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
 a {
-  text-decoration: none;
   color: unset;
+  text-decoration: none;
 }
 li {
   list-style: none;
@@ -27,19 +27,19 @@ li {
 
 html,
 body {
-  font-size: 100%;
   position: relative;
   height: 100%;
+  font-size: 100%;
 }
 
 body {
-  font-family: $font-family;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
   background-color: $black;
-  color: $white;
   overflow: hidden;
+  color: $white;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $font-family;
 }
 
 #root,
@@ -49,15 +49,15 @@ body {
 
 .btn-main,
 .btn-second {
-  font-family: Angled;
-  padding: 1rem;
+  cursor: pointer;
   margin: 0 1rem;
-  border-radius: 1rem 0 1rem 0;
-  color: white;
   border: none;
+  border-radius: 1rem 0 1rem 0;
+  padding: 1rem;
+  color: white;
   font-weight: bolder;
   font-size: 1.4rem;
-  cursor: pointer;
+  font-family: Angled;
   @include phone() {
     padding: 0.5rem;
     font-size: 1rem;
@@ -83,9 +83,9 @@ body {
 }
 
 .title {
-  font-family: SpookyGravePersonalUse;
   font-size: 2rem;
   line-height: 4rem;
+  font-family: SpookyGravePersonalUse;
   h2 {
     color: $main-color;
     font-size: 3rem;
@@ -93,14 +93,14 @@ body {
   }
 }
 .scroll {
-  font-family: Angled;
-  color: $main-color;
-  z-index: 100;
-  cursor: pointer;
   position: absolute;
   bottom: 0;
   left: 50%;
+  z-index: 100;
   animation: anime 1.5s linear infinite alternate;
+  cursor: pointer;
+  color: $main-color;
+  font-family: Angled;
   @keyframes anime {
     from {
       transform: translateX(-50%) translateY(-1.3rem);
@@ -117,23 +117,23 @@ body {
 
 .swiper-pagination-bullet {
   $size: 20px;
+  position: relative;
+  opacity: 0.8;
+  margin: 10px;
+  border-radius: unset;
+  background-color: transparent;
   width: $size;
   height: $size;
-  border-radius: unset;
-  margin: 10px;
-  background-color: transparent;
-  opacity: 0.8;
-  position: relative;
 
   &::before {
-    content: '';
-    width: 80%;
-    height: 80%;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #4267b2;
+    width: 80%;
+    height: 80%;
+    content: '';
   }
 
   &-active {
@@ -145,19 +145,19 @@ body {
   }
 }
 .section {
-  width: 100%;
-  height: 100vh;
-  visibility: hidden;
   transform: scale(3);
+  visibility: hidden;
   opacity: 0;
   transition:
     visibility 1s ease,
     transform 0.6s ease,
     opacity 0.5s ease;
+  width: 100%;
+  height: 100vh;
 
   &.active {
-    visibility: visible;
     transform: scale(1);
+    visibility: visible;
     opacity: 1;
     transition-delay: 0.3s;
   }
